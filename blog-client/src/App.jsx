@@ -5,11 +5,13 @@ import SignUp from "./Pages/SignUp/Signup"
 import SignIn from "./Pages/SignIn/SignIn"
 import Dashboard from "./Pages/Dashboard/Dashboard"
 import Projects from "./Pages/Projects/Projects"
+import NavBar from "./Pages/Shared/NavBar"
 
 
 export default function App() {
   return (
     <BrowserRouter>
+      <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
